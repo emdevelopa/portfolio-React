@@ -35,6 +35,7 @@ export default function About() {
                         </Box>
                         <Box width='100%'>
                             <Typography variant="h5" fontWeight={800}>My Skills</Typography>
+                            <box
                         </Box>
                     </Stack>
                 </Stack>
