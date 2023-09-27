@@ -27,7 +27,7 @@ const textPrimary = {
     marginBottom: 4,
 
 }
-const projectButton ={
+export const projectButton ={
     background:'#7843e9;',
     padding:'1em 4em',
     color:"#fff",
