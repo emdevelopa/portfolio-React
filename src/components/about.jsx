@@ -36,10 +36,10 @@ export default function About() {
                         <Box width='100%'>
                             <Typography variant="h5" fontWeight={800}>My Skills</Typography>
                             <Box>HTML</Box>
-                            <Box>HTML</Box>
-                            <Box>HTML</Box>
-                            <Box>HTML</Box>
-                            <Box>HTML</Box>
+                            <Box>JS</Box>
+                            <Box>NextJS/ReactJS</Box>
+                            <Box>EXPRESS</Box>
+                            <Box>SQLITE, MONGO</Box>
                             <Box>HTML</Box>
                             <Box>HTML</Box>
                         </Box>
