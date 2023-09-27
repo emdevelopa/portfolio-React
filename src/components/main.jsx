@@ -30,7 +30,9 @@ const textPrimary = {
 const projectButton ={
     background:'#7843e9;',
     padding:'1em 4em',
-    color:"black",
+    color:"#fff",
+    fontSize:'18px',
+    fontWeight:'bold',
     // marginTop:4
 }
 export default function Main() {
@@ -41,8 +43,7 @@ export default function Main() {
                     <Typography variant="h1" marginBottom={90} sx={headingPrimary}>Hey, I'm Gyimah Emmanuel</Typography>
                     <Typography sx={textPrimary}>A Passionate building the Frontend of Websites and Web Applications that leads to the success of the overall product</Typography>
                     <Box>
-                        <a href="#"><Button sx={projectButton} >Projects</Button></a>
-                        
+                        <a href="#"><Button sx={projectButton} >Projects</Button></a> 
                     </Box>
                 </Box>
 
