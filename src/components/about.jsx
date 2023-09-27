@@ -21,7 +21,7 @@ export default function About() {
                     <Box bgcolor='#7843e9' width={60} height={8} borderRadius={5}></Box>
                     <Typography variant="p" fontSize={20} >Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</Typography>
                     <Stack direction={"row"}  width='100%' justifyContent={"space-between"}>
-                        <Box width='100%' bgcolor='blu' paddingX={5}>
+                        <Box width='100%'  paddingX={5}>
                             <Typography variant="h5" marginBottom={5} fontWeight={800}>Get to know me!</Typography>
                             <Typography>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</Typography>
                             <br />
