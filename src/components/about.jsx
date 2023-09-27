@@ -33,7 +33,7 @@ export default function About() {
                                 <a href="#"><Button  sx={prButton}>Contact</Button></a>
                             </Box>
                         </Box>
-                        <Box width='100%' bgcolor='green'>
+                        <Box width='100%'>
                             <Typography variant="h5" fontWeight={800}>My Skills</Typography>
                         </Box>
                     </Stack>
