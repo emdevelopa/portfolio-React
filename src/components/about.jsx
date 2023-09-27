@@ -1,10 +1,9 @@
-import { Button } from "@mui/base";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 // import { projectButton } from "./main";
 
 
-const projectButton = {
+const prButton = {
     background: '#7843e9;',
     padding: '1em 4em',
     color: "#fff",
@@ -31,10 +30,12 @@ export default function About() {
                                 I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
                             </Typography>
                             <Box>
-                                <a href="#"><Button sx={projectButton} >Projects</Button></a>
+                                <a href="#"><Button  sx={prButton}>Contact</Button></a>
                             </Box>
                         </Box>
-                        <Box width='100%' bgcolor='green'><Typography variant="h5" fontWeight={800}>My Skills</Typography></Box>
+                        <Box width='100%' bgcolor='green'>
+                            <Typography variant="h5" fontWeight={800}>My Skills</Typography>
+                        </Box>
                     </Stack>
                 </Stack>
             </Box>
