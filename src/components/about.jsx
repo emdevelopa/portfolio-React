@@ -20,6 +20,7 @@ const prButton = {
 
 const skillContainer = {
     background: 'black',
+    // height:'5em',
     borderRadius: 5,
     fontWeight: 'bold',
     padding: 2,
@@ -61,29 +62,29 @@ export default function About() {
                         </Box>
                         <Box width='100%'>
                             <Typography variant="h5" marginBottom={5} fontWeight={800}>My Skills</Typography>
-                            <Stack rowGap={2}>
-                                <Stack direction='' columnGap={4} sx={{media}}>
-                                    <Box sx={skillContainer}>NextJS/ReactJS</Box>
-                                    <Box sx={skillContainer}> Vanilla HTML</Box>
-                                    <Box sx={skillContainer}>Vanilla JS</Box>
-                                    <Box sx={skillContainer}>Vanilla CSS</Box>
+                            <Stack rowGap={2} overflow='scroll'>
+                                <Stack direction='row' columnGap={4} sx={{media}}>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>NextJS/ReactJS</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}> Vanilla HTML</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>Vanilla JS</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>Vanilla CSS</Stack>
                                 </Stack>
                                 <Stack direction='row' columnGap={4}>
-                                    <Box sx={skillContainer}>Typescript</Box>
-                                    <Box sx={skillContainer}>Tailwind CSS</Box>
-                                    <Box sx={skillContainer}>MAterial UI</Box>
-                                    <Box sx={skillContainer}>BootStrap</Box>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>Typescript</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>Tailwind CSS</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>MAterial UI</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>BootStrap</Stack>
                                 </Stack>
                                 <Stack direction='row' columnGap={4}>
-                                    <Box sx={skillContainer}>SQLITE</Box>
-                                    <Box sx={skillContainer}>MySQL</Box>
-                                    <Box sx={skillContainer}>Mongo DB</Box>
-                                    <Box sx={skillContainer}>PostgreSQL</Box>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>SQLITE</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>MySQL</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>Mongo DB</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>PostgreSQL</Stack>
                                 </Stack>
                                 <Stack direction='row' columnGap={4}>
-                                    <Box sx={skillContainer}>NODEJS(ExpressJS)</Box>
-                                    <Box sx={skillContainer}>PYTHON(Flask/FastAPI)</Box>
-                                    <Box sx={skillContainer}>PHP</Box>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>NODEJS(ExpressJS)</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>PYTHON(Flask/FastAPI)</Stack>
+                                    <Stack alignItems='center' justifyContent='center' sx={skillContainer}>PHP</Stack>
                                 </Stack>
                             </Stack>
 

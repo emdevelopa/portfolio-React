@@ -35,7 +35,7 @@ export const projectButton ={
     fontWeight: 'bold',
     transition: 'background-color 0.3s, border-radius 0.3s',
     '&:hover': {
-        background: 'black', // Change the background color on hover
+        background: 'black', 
         borderRadius: 5,
 
       },
@@ -44,10 +44,12 @@ export default function Main() {
     return (
         <>
             <Box sx={mainStyle}>
-                <Box sx={{ bgcolor:'red',width: '100%', textAlign: 'center','@media (max-width: 600px)': {
-                            width:'100%', // Hide on screens with a maximum width of 600px (adjust this value as needed)
+                <Box sx={{ width: '100%', textAlign: 'center','@media (max-width: 600px)': {
+                            width:'100%', 
                         },}}>
-                    <Typography variant="h1" marginBottom={90} sx={headingPrimary}>Hey, I'm Gyimah Emmanuel</Typography>
+                    <Typography variant="h1" marginBottom={90} sx={{...headingPrimary,'@media (max-width: 600px)': {
+                            fontSize:'44px',
+                        }}}>Hey, I'm Gyimah Emmanuel</Typography>
                     <Typography sx={textPrimary}>A Passionate building the Frontend of Websites and Web Applications that leads to the success of the overall product</Typography>
                     <Box>
                         <a href="#"><Button sx={projectButton} >Projects</Button></a> 
