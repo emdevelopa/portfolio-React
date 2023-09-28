@@ -10,7 +10,7 @@ const imageStyle = {
     // padding: 0.5,
 };
 const parentNavBox ={
-    padding:'1em 0',
+    padding:'0.5em 0',
     zIndex:1,
     background: '#fff',
     boxShadow: '0px 0px 10px 2px #00000039',
@@ -30,7 +30,7 @@ export default function Navbar() {
                         <Box sx={imageStyle}>
                             <img src='dp.jpg' alt="myDp" className="image"/>
                         </Box>
-                        <Typography>GYIMAH EMMANUEL</Typography>
+                        <Typography fontWeight='bold' variant="h5">DEV WITH EM</Typography>
                     </Stack>
                     <Box sx={navlinkStyle}>
                         <Stack direction='row' alignItems='center' justifyContent='space-around'>
