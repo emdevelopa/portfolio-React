@@ -1,3 +1,4 @@
+import { Home } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 // import f from './dp.jpg'
@@ -32,6 +33,7 @@ export default function Navbar() {
                         </Box>
                         <Typography fontWeight='bold' variant="h5">DEV WITH EM</Typography>
                     </Stack>
+                <Home color="red"/>
                     <Box sx={{
                         ...navlinkStyle,
                         '@media (max-width: 600px)': {

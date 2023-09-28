@@ -44,7 +44,9 @@ export default function Main() {
     return (
         <>
             <Box sx={mainStyle}>
-                <Box sx={{ width: '70%', textAlign: 'center' }}>
+                <Box sx={{ width: '70%', textAlign: 'center','@media (max-width: 600px)': {
+                            display: 'none', // Hide on screens with a maximum width of 600px (adjust this value as needed)
+                        },}}>
                     <Typography variant="h1" marginBottom={90} sx={headingPrimary}>Hey, I'm Gyimah Emmanuel</Typography>
                     <Typography sx={textPrimary}>A Passionate building the Frontend of Websites and Web Applications that leads to the success of the overall product</Typography>
                     <Box>
