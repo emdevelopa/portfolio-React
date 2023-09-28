@@ -20,8 +20,8 @@ export default function About() {
                     <Typography variant="h4" fontWeight={600}>ABOUT ME</Typography>
                     <Box bgcolor='#7843e9' width={60} height={8} borderRadius={5}></Box>
                     <Typography variant="p" fontSize={20} >Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</Typography>
-                    <Stack direction={"row"}  width='100%' justifyContent={"space-between"}>
-                        <Box width='100%'  paddingX={5}>
+                    <Stack direction={"row"} width='100%' justifyContent={"space-between"}>
+                        <Box width='100%' paddingX={5}>
                             <Typography variant="h5" marginBottom={5} fontWeight={800}>Get to know me!</Typography>
                             <Typography>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</Typography>
                             <br />
@@ -30,20 +30,31 @@ export default function About() {
                                 I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
                             </Typography>
                             <Box>
-                                <a href="#"><Button  sx={prButton}>Contact</Button></a>
+                                <a href="#"><Button sx={prButton}>Contact</Button></a>
                             </Box>
                         </Box>
                         <Box width='100%'>
                             <Typography variant="h5" fontWeight={800}>My Skills</Typography>
-                            <Box>HTML</Box>
-                            <Box>JS</Box>
-                            <Box>NextJS/ReactJS</Box>
-                            <Box>EXPRESS</Box>
-                            <Box>SQLITE, MONGO</Box>
-                            <Box>HTML</Box>
-                            <Box>HTML</Box>
+                            <Stack columnGap={4}>
+                                <Typography>Frontend Development</Typography>
+                                <Stack>
+                                    <Box>NextJS/ReactJS</Box>
+                                    <Box>EXPRESS</Box>
+                                    <Box>HTML</Box>
+                                    <Box>JS</Box>
+                                    <Box>SQLITE, MONGO</Box>
+                                    <Box>HTML</Box>
+                                    <Box>HTML</Box>
+                                </Stack>
+                            </Stack>
+                            <Stack direction='row' columnGap={4}>
+                                <Box>SQLITE, MONGO</Box>
+                                <Box>HTML</Box>
+                                <Box>HTML</Box>
+                            </Stack>
                         </Box>
                     </Stack>
+
                 </Stack>
             </Box>
         </>
