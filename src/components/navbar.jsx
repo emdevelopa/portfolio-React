@@ -9,15 +9,15 @@ const imageStyle = {
     borderRadius: '100%',
     // padding: 0.5,
 };
-const parentNavBox ={
-    padding:'0.5em 0',
-    zIndex:1,
+const parentNavBox = {
+    padding: '0.5em 0',
+    zIndex: 1,
     // background: '#fff',
     boxShadow: '0px 0px 10px 2px #00000039',
 }
 
 const navlinkStyle = {
-    width:'40%'  
+    width: '40%'
 }
 
 
@@ -28,11 +28,16 @@ export default function Navbar() {
                 <Stack direction='row' spacing={2} justifyContent='space-between' padding='0 2em'>
                     <Stack direction='row' spacing={2} alignItems='center'>
                         <Box sx={imageStyle}>
-                            <img src='dp.jpg' alt="myDp" className="image"/>
+                            <img src='dp.jpg' alt="myDp" className="image" />
                         </Box>
                         <Typography fontWeight='bold' variant="h5">DEV WITH EM</Typography>
                     </Stack>
-                    <Box sx={navlinkStyle}>
+                    <Box sx={{
+                        ...navlinkStyle,
+                        '@media (max-width: 600px)': {
+                            display: 'none', // Hide on screens with a maximum width of 600px (adjust this value as needed)
+                        },
+                    }}>
                         <Stack direction='row' alignItems='center' justifyContent='space-around'>
                             <Box height='4em'></Box>
                             <Typography>Home</Typography>
