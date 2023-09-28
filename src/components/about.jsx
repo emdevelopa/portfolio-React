@@ -14,7 +14,7 @@ const prButton = {
         background: 'black', // Change the background color on hover
         borderRadius: 5,
 
-      },
+    },
     // marginTop:4
 }
 
@@ -24,8 +24,8 @@ const skillContainer = {
     fontWeight: 'bold',
     padding: 2,
     color: '#fff',
-   
-    
+
+
 }
 
 export default function About() {
@@ -41,7 +41,9 @@ export default function About() {
                             <Typography variant="h5" marginBottom={5} fontWeight={800}>Get to know me!</Typography>
                             <Typography>As a Full Stack Developer, I specialize in crafting the user-facing components of websites and web applications, driving the success of the entire digital product. You can explore my portfolio showcasing some of my remarkable projects in the designated Projects section.</Typography>
                             <br />
-                            <Typography>I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming</Typography><br />
+                            <Typography>In addition to my development work, I'm passionate about knowledge sharing within the Dev Community. Over the years, I've amassed a wealth of experience in web development, and I enjoy disseminating this knowledge to assist fellow developers. I invite you to connect with me on LinkedIn, where I regularly post valuable content covering web development and programming.
+
+                            </Typography><br />
                             <Typography>
                                 I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
                             </Typography>
