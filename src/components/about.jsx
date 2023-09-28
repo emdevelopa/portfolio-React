@@ -45,7 +45,7 @@ export default function About() {
 
                             </Typography><br />
                             <Typography>
-                                I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+                                I'm actively seeking job opportunities where I can make meaningful contributions, continuously learn, and further my professional growth. If you have an exciting opportunity that aligns with my skills and experience, please don't hesitate to reach out. Your contact could be the next step in my journey towards excellence in Full Stack Development.
                             </Typography>
                             <Box marginTop={4}>
                                 <a href="#"><Button sx={prButton}>Contact</Button></a>
