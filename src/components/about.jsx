@@ -5,11 +5,27 @@ import { Box, Stack } from "@mui/system";
 
 const prButton = {
     background: '#7843e9;',
-    padding: '1em 4em',
+    padding: '0.5em 3em',
     color: "#fff",
     fontSize: '18px',
     fontWeight: 'bold',
+    transition: 'background-color 0.3s, border-radius 0.3s',
+    '&:hover': {
+        background: 'black', // Change the background color on hover
+        borderRadius: 5,
+
+      },
     // marginTop:4
+}
+
+const skillContainer = {
+    background: 'black',
+    borderRadius: 5,
+    fontWeight: 'bold',
+    padding: 2,
+    color: '#fff',
+   
+    
 }
 
 export default function About() {
@@ -19,9 +35,9 @@ export default function About() {
                 <Stack alignItems='center' rowGap={2}>
                     <Typography variant="h4" fontWeight={600}>ABOUT ME</Typography>
                     <Box bgcolor='#7843e9' width={60} height={8} borderRadius={5}></Box>
-                    <Typography variant="p" fontSize={20} >Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</Typography>
+                    <Typography variant="p" marginBottom={5} fontSize={20} >Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</Typography>
                     <Stack direction={"row"} width='100%' justifyContent={"space-between"}>
-                        <Box width='100%' paddingX={5}>
+                        <Box width='60%' paddingX={5}>
                             <Typography variant="h5" marginBottom={5} fontWeight={800}>Get to know me!</Typography>
                             <Typography>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</Typography>
                             <br />
@@ -29,29 +45,38 @@ export default function About() {
                             <Typography>
                                 I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
                             </Typography>
-                            <Box>
+                            <Box marginTop={4}>
                                 <a href="#"><Button sx={prButton}>Contact</Button></a>
                             </Box>
                         </Box>
                         <Box width='100%'>
-                            <Typography variant="h5" fontWeight={800}>My Skills</Typography>
-                            <Stack columnGap={4}>
-                                <Typography>Frontend Development</Typography>
-                                <Stack>
-                                    <Box>NextJS/ReactJS</Box>
-                                    <Box>EXPRESS</Box>
-                                    <Box>HTML</Box>
-                                    <Box>JS</Box>
-                                    <Box>SQLITE, MONGO</Box>
-                                    <Box>HTML</Box>
-                                    <Box>HTML</Box>
+                            <Typography variant="h5" marginBottom={5} fontWeight={800}>My Skills</Typography>
+                            <Stack rowGap={2}>
+                                <Stack direction='' columnGap={4}>
+                                    <Box sx={skillContainer}>NextJS/ReactJS</Box>
+                                    <Box sx={skillContainer}> Vanilla HTML</Box>
+                                    <Box sx={skillContainer}>Vanilla JS</Box>
+                                    <Box sx={skillContainer}>Vanilla CSS</Box>
+                                </Stack>
+                                <Stack direction='row' columnGap={4}>
+                                    <Box sx={skillContainer}>Typescript</Box>
+                                    <Box sx={skillContainer}>Tailwind CSS</Box>
+                                    <Box sx={skillContainer}>MAterial UI</Box>
+                                    <Box sx={skillContainer}>BootStrap</Box>
+                                </Stack>
+                                <Stack direction='row' columnGap={4}>
+                                    <Box sx={skillContainer}>SQLITE</Box>
+                                    <Box sx={skillContainer}>MySQL</Box>
+                                    <Box sx={skillContainer}>Mongo DB</Box>
+                                    <Box sx={skillContainer}>PostgreSQL</Box>
+                                </Stack>
+                                <Stack direction='row' columnGap={4}>
+                                    <Box sx={skillContainer}>NODEJS(ExpressJS)</Box>
+                                    <Box sx={skillContainer}>PYTHON(Flask/FastAPI)</Box>
+                                    <Box sx={skillContainer}>PHP</Box>
                                 </Stack>
                             </Stack>
-                            <Stack direction='row' columnGap={4}>
-                                <Box>SQLITE, MONGO</Box>
-                                <Box>HTML</Box>
-                                <Box>HTML</Box>
-                            </Stack>
+
                         </Box>
                     </Stack>
 

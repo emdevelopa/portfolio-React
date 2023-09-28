@@ -28,12 +28,17 @@ const textPrimary = {
 
 }
 export const projectButton ={
-    background:'#7843e9;',
-    padding:'1em 4em',
-    color:"#fff",
-    fontSize:'18px',
-    fontWeight:'bold',
-    // marginTop:4
+    background: '#7843e9;',
+    padding: '1em 4em',
+    color: "#fff",
+    fontSize: '18px',
+    fontWeight: 'bold',
+    transition: 'background-color 0.3s, border-radius 0.3s',
+    '&:hover': {
+        background: 'black', // Change the background color on hover
+        borderRadius: 5,
+
+      },
 }
 export default function Main() {
     return (
