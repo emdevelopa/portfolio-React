@@ -1,4 +1,4 @@
-import { Home } from "@mui/icons-material";
+import { Home, Menu } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 // import f from './dp.jpg'
@@ -18,7 +18,7 @@ const parentNavBox = {
 }
 
 const navlinkStyle = {
-    width: '40%'
+    width: '100%'
 }
 
 
@@ -33,21 +33,28 @@ export default function Navbar() {
                         </Box>
                         <Typography fontWeight='bold' variant="h5">DEV WITH EM</Typography>
                     </Stack>
-                <Home color="red"/>
-                    <Box sx={{
-                        ...navlinkStyle,
+
+                    <Stack sx={{navlinkStyle}} direction='flex' alignItems='center'>
+                    <Menu sx={{
+                            display:'none',
+                            '@media (max-width: 600px)': {
+                                display: 'block', // Hide on screens with a maximum width of 600px (adjust this value as needed)
+                            },
+                        }}/>
+                        <Stack direction='row' alignItems='center' justifyContent='space-around' spacing={4}  sx={{
+                      
                         '@media (max-width: 600px)': {
                             display: 'none', // Hide on screens with a maximum width of 600px (adjust this value as needed)
                         },
                     }}>
-                        <Stack direction='row' alignItems='center' justifyContent='space-around'>
+                      
                             <Box height='4em'></Box>
                             <Typography>Home</Typography>
                             <Typography>About</Typography>
                             <Typography>Projects</Typography>
                             <Typography>Contact</Typography>
                         </Stack>
-                    </Box>
+                    </Stack>
                 </Stack>
             </Box>
             {/* <h1>Navbar</h1> */}

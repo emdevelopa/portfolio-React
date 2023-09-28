@@ -24,8 +24,12 @@ const skillContainer = {
     fontWeight: 'bold',
     padding: 2,
     color: '#fff',
-
-
+ 
+}
+const media = {
+    '@media (max-width: 600px)': {
+        flexDirection:'column'
+    },
 }
 
 export default function About() {
@@ -36,8 +40,12 @@ export default function About() {
                     <Typography variant="h4" fontWeight={600}>ABOUT ME</Typography>
                     <Box bgcolor='#7843e9' width={60} height={8} borderRadius={5}></Box>
                     <Typography variant="p" marginBottom={5} fontSize={20} >Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</Typography>
-                    <Stack direction={"row"} width='100%' justifyContent={"space-between"}>
-                        <Box width='60%' paddingX={5}>
+                    <Stack direction={"row"} width='100%' justifyContent={"space-between"} sx={{'@media (max-width: 600px)': {
+                            flexDirection:'column'
+                        },}}>
+                        <Box width='60%' paddingX={5} sx={{'@media (max-width: 600px)': {
+                            width:'100%'
+                        },}}>
                             <Typography variant="h5" marginBottom={5} fontWeight={800}>Get to know me!</Typography>
                             <Typography>As a Full Stack Developer, I specialize in crafting the user-facing components of websites and web applications, driving the success of the entire digital product. You can explore my portfolio showcasing some of my remarkable projects in the designated Projects section.</Typography>
                             <br />
@@ -54,7 +62,7 @@ export default function About() {
                         <Box width='100%'>
                             <Typography variant="h5" marginBottom={5} fontWeight={800}>My Skills</Typography>
                             <Stack rowGap={2}>
-                                <Stack direction='' columnGap={4}>
+                                <Stack direction='' columnGap={4} sx={{media}}>
                                     <Box sx={skillContainer}>NextJS/ReactJS</Box>
                                     <Box sx={skillContainer}> Vanilla HTML</Box>
                                     <Box sx={skillContainer}>Vanilla JS</Box>
