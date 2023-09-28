@@ -13,12 +13,12 @@ const headingPrimary = {
     textTransform: 'uppercase',
     letterSpacing: '1px',
     textAlign: 'center',
-    color: '#111',
+    // color: '#111',
     fontWeight: 800,
     marginBottom: 4
 }
 const textPrimary = {
-    color: '#333',
+    // color: '#333',
     fontSize: '24px',
     textAlign: 'center',
     width: "80%",

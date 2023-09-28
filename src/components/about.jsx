@@ -39,7 +39,7 @@ export default function About() {
                     <Stack direction={"row"} width='100%' justifyContent={"space-between"}>
                         <Box width='60%' paddingX={5}>
                             <Typography variant="h5" marginBottom={5} fontWeight={800}>Get to know me!</Typography>
-                            <Typography>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</Typography>
+                            <Typography>As a Full Stack Developer, I specialize in crafting the user-facing components of websites and web applications, driving the success of the entire digital product. You can explore my portfolio showcasing some of my remarkable projects in the designated Projects section.</Typography>
                             <br />
                             <Typography>I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming</Typography><br />
                             <Typography>

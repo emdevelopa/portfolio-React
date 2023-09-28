@@ -12,7 +12,7 @@ const imageStyle = {
 const parentNavBox ={
     padding:'0.5em 0',
     zIndex:1,
-    background: '#fff',
+    // background: '#fff',
     boxShadow: '0px 0px 10px 2px #00000039',
 }
 

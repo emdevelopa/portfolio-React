@@ -5,12 +5,3 @@
     border-radius: 100%;
 }
 
-body::-webkit-scrollbar{
-    background: #b9b9b9;
-    width: 8px;
-}
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(9, 70, 89);
-    border-radius: 10px;
-    color: red;
-}
