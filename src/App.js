@@ -7,6 +7,7 @@ import Footer from './components/footer';
 import { Stack } from '@mui/system';
 import About from './components/about';
 import { Box, ThemeProvider, createTheme, CssBaseline} from '@mui/material';
+import Projects from './components/projects';
 
 const darkTheme = createTheme({
   palette: {
@@ -26,6 +27,7 @@ function App() {
         </Stack>
 
         <About />
+        <Projects/>
         <Footer />
       </ThemeProvider>
     </div>

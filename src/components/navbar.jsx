@@ -36,7 +36,7 @@ const showNavonMobile = {
     padding: '4em',
     justifyContent: 'center',
     rowGap: 6,
-    transition:'display 2s'
+    
 }
 
 export default function Navbar() {
