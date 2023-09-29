@@ -1,6 +1,7 @@
 import { Home, Menu } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
+import { useState } from "react";
 // import f from './dp.jpg'
 
 const imageStyle = {
@@ -21,8 +22,16 @@ const navlinkStyle = {
     width: '100%'
 }
 
+const navbarlistMediaquerry = {
+
+    '@media (max-width: 600px)': {
+        display: 'none', 
+    },
+}
 
 export default function Navbar() {
+    const [menuToggle,setMenuToggle] = useState(false)
+    console.log(menuToggle);
     return (
         <>
             <Box sx={parentNavBox} position='fixed' width='100%'>
@@ -38,15 +47,12 @@ export default function Navbar() {
                     <Menu sx={{
                             display:'none',
                             '@media (max-width: 600px)': {
-                                display: 'block', // Hide on screens with a maximum width of 600px (adjust this value as needed)
+                                display: 'block', 
                             },
-                        }}/>
-                        <Stack direction='row' alignItems='center' justifyContent='space-around' spacing={4}  sx={{
-                      
-                        '@media (max-width: 600px)': {
-                            display: 'none', // Hide on screens with a maximum width of 600px (adjust this value as needed)
-                        },
-                    }}>
+                        }} onClick={(e)=>{
+                            setMenuToggle(!menuToggle)
+                        }} />
+                        <Stack direction='row' alignItems='center' justifyContent='space-around' spacing={4} sx={menuToggle ? navbarlistMediaquerry : {bgcolor:'red', position:'absolute'}}>
                       
                             <Box height='4em'></Box>
                             <Typography>Home</Typography>
