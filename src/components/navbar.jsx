@@ -52,7 +52,7 @@ export default function Navbar() {
                         }} onClick={(e)=>{
                             setMenuToggle(!menuToggle)
                         }} />
-                        <Stack direction='row' alignItems='center' justifyContent='space-around' spacing={4} sx={menuToggle ? navbarlistMediaquerry : {bgcolor:'red', position:'absolute'}}>
+                        <Stack direction='row' alignItems='center' justifyContent='space-around' spacing={4} sx={menuToggle ? navbarlistMediaquerry : {bgcolor:'red', position:'absolute', top:85, right:0, flexDirection:'column',spacing:0}}>
                       
                             <Box height='4em'></Box>
                             <Typography>Home</Typography>
