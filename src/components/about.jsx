@@ -40,11 +40,11 @@ export default function About() {
                 <Stack alignItems='center' rowGap={2}>
                     <Typography variant="h4" fontWeight={600}>ABOUT ME</Typography>
                     <Box bgcolor='#7843e9' width={60} height={8} borderRadius={5}></Box>
-                    <Typography variant="p" marginBottom={5} fontSize={20} >Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</Typography>
-                    <Stack direction={"row"} width='100%' justifyContent={"space-between"} sx={{'@media (max-width: 600px)': {
+                    <Typography variant="p" marginBottom={5} fontSize={20} textAlign='center' paddingX={2}>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</Typography>
+                    <Stack direction={"row"} width='100%' rowGap={4} justifyContent={"space-between"} sx={{'@media (max-width: 600px)': {
                             flexDirection:'column'
                         },}}>
-                        <Box width='60%' paddingX={5} sx={{'@media (max-width: 600px)': {
+                        <Box width='60%' paddingX={2} sx={{'@media (max-width: 600px)': {
                             width:'100%'
                         },}}>
                             <Typography variant="h5" marginBottom={5} fontWeight={800}>Get to know me!</Typography>
@@ -60,9 +60,9 @@ export default function About() {
                                 <a href="#"><Button sx={prButton}>Contact</Button></a>
                             </Box>
                         </Box>
-                        <Box width='100%'>
-                            <Typography variant="h5" marginBottom={5} fontWeight={800}>My Skills</Typography>
-                            <Stack rowGap={2} overflow='scroll'>
+                        <Box width='100%' paddingX={2} >
+                            <Typography variant="h5" marginBottom={5}  fontWeight={800}>My Skills</Typography>
+                            <Stack rowGap={2} overflow='scroll'borderRadius={5} boxShadow='0px 0px 3px 2px white'>
                                 <Stack direction='row' columnGap={4} sx={{media}}>
                                     <Stack alignItems='center' justifyContent='center' sx={skillContainer}>NextJS/ReactJS</Stack>
                                     <Stack alignItems='center' justifyContent='center' sx={skillContainer}> Vanilla HTML</Stack>
