@@ -36,7 +36,7 @@ const media = {
 export default function About() {
     return (
         <>
-            <Box marginTop={10}>
+            <Box marginTop={10} id="about">
                 <Stack alignItems='center' rowGap={2}>
                     <Typography variant="h4" fontWeight={600}>ABOUT ME</Typography>
                     <Box bgcolor='#7843e9' width={60} height={8} borderRadius={5}></Box>

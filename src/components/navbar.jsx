@@ -1,7 +1,8 @@
-import { Home, Menu } from "@mui/icons-material";
+import { Menu } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import { useState } from "react";
+import { Link } from "react-scroll/modules";
 // import f from './dp.jpg'
 
 const imageStyle = {
@@ -72,13 +73,14 @@ export default function Navbar() {
                                 },
                             }}>
                                 <Typography>Home</Typography>
-                                <Typography>About</Typography>
-                                <Typography>Projects</Typography>
-                                <Typography>Contact</Typography>
+                                <Link to='/' smooth={true} >Home</Link>
+                                <Link to='about' smooth={true} >About</Link>
+                                <Link to='project' smooth={true} >Project</Link>
                             </Stack>
                         </Stack>
                     </Stack>
                 </Stack>
+
             </Box>
             {/* <h1>Navbar</h1> */}
         </>
