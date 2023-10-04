@@ -75,6 +75,7 @@ export default function Navbar() {
                                 <Link to='nav' smooth={true} >Home</Link>
                                 <Link to='about' smooth={true} >About</Link>
                                 <Link to='project' smooth={true} >Project</Link>
+                                <Link to='contact' smooth={true} >Contact</Link>
                             </Stack>
                         </Stack>
                     </Stack>
