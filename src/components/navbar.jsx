@@ -48,7 +48,7 @@ export default function Navbar() {
             <Box sx={parentNavBox} position='fixed' width='100%'>
                 <Stack direction='row' spacing={2} justifyContent='space-between' padding='0 2em'>
                     <Stack direction='row' spacing={2} alignItems='center'>
-                        <Box sx={imageStyle}>
+                        <Box sx={imageStyle} id="nav">
                             <img src='dp.jpg' alt="myDp" className="image" />
                         </Box>
                         <Typography fontWeight='bold' variant="h5">DEV WITH EM</Typography>
@@ -72,8 +72,7 @@ export default function Navbar() {
                                     columnGap: 6
                                 },
                             }}>
-                                <Typography>Home</Typography>
-                                <Link to='/' smooth={true} >Home</Link>
+                                <Link to='nav' smooth={true} >Home</Link>
                                 <Link to='about' smooth={true} >About</Link>
                                 <Link to='project' smooth={true} >Project</Link>
                             </Stack>
