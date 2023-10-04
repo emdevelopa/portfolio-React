@@ -9,6 +9,7 @@ export default function Projects() {
                     <Box bgcolor='#7843e9' width={60} height={8} borderRadius={5}></Box>
                     <Typography variant="p" marginBottom={5} fontSize={20} textAlign='center' paddingX={2}>Here you will find some of the personal and clients projects that I created with each project containing its own case study</Typography>
                 </Stack>
+                <Box></Box>
             </Box>
         </>
     )
